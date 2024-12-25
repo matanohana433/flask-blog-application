@@ -24,3 +24,4 @@ charset-normalizer~=3.4.0
 Flask-Login~=0.6.3
 gunicorn==21.2.0
 bootstrap-flask==2.4.1
+flask-wtf~=1.2.2
