@@ -29,7 +29,7 @@ app.jinja_env.globals['current_year'] = datetime.now().year
 ckeditor = CKEditor(app)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI", "sqlite:///posts.db")
 
 db = SQLAlchemy(app)
 
@@ -240,4 +240,4 @@ def send_email(name, email, phone, message):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
