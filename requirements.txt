@@ -26,3 +26,4 @@ gunicorn==21.2.0
 bootstrap-flask==2.4.1
 flask-wtf~=1.2.2
 Flask-CKEditor==1.0.0
+psycopg2-binary==2.9.9
